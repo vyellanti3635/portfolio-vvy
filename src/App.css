@@ -1,0 +1,68 @@
+.brand-text {
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.hero-section {
+  background-color: #2c3e50;
+  color: white;
+  padding: 150px 0 80px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-subtitle {
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+.hero-bio {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #bdc3c7;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.about-section {
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.projects-section {
+  background-color: #fff;
+}
+
+.project-card {
+  border: 1px solid #dee2e6;
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.resume-section {
+  background-color: #f8f9fa;
+}
+
+.contact-section {
+  background-color: #fff;
+}
+
+.footer-section {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+}
