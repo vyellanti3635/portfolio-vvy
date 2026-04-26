@@ -1,0 +1,64 @@
+.resume-card {
+  padding: var(--space-7);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  max-width: 760px;
+}
+
+.resume-card__meta {
+  margin-bottom: var(--space-5);
+}
+
+.resume-card__doc {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.resume-card__doc-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  background: rgba(var(--accent-rgb), 0.1);
+  border: 1px solid rgba(var(--accent-rgb), 0.3);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+}
+
+.resume-card__name {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.resume-card__date {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.resume-card__summary {
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: var(--space-6);
+}
+
+.resume-card__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+@media (max-width: 600px) {
+  .resume-card {
+    padding: var(--space-6) var(--space-5);
+  }
+}

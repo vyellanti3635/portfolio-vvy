@@ -1,0 +1,203 @@
+.contact__intro {
+  max-width: 540px;
+  color: var(--text-muted);
+  margin-bottom: var(--space-7);
+}
+
+.contact__layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-7);
+}
+
+@media (min-width: 900px) {
+  .contact__layout {
+    grid-template-columns: 1.4fr 1fr;
+    gap: var(--space-8);
+  }
+}
+
+/* ----- Form ----- */
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.contact__row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+@media (min-width: 600px) {
+  .contact__row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contact__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.contact__label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+}
+
+.contact__field input,
+.contact__field textarea {
+  padding: 12px 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  transition: border-color 0.2s var(--ease-out), background 0.2s var(--ease-out);
+}
+
+.contact__field input::placeholder,
+.contact__field textarea::placeholder {
+  color: var(--text-subtle);
+}
+
+.contact__field input:focus,
+.contact__field textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: var(--surface-elev);
+}
+
+.contact__field textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-family: var(--font-display);
+}
+
+.contact__field input:disabled,
+.contact__field textarea:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.contact__error {
+  padding: 10px 14px;
+  font-size: 0.86rem;
+  color: #fca5a5;
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  border-radius: var(--radius-md);
+}
+
+.contact__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  margin-top: var(--space-2);
+}
+
+.contact__hint {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  color: var(--text-subtle);
+}
+
+/* ----- Success state ----- */
+.contact__success {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-7) var(--space-6);
+  background: var(--surface);
+  border: 1px solid rgba(var(--accent-rgb), 0.3);
+  border-radius: var(--radius-lg);
+}
+
+.contact__success-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(var(--accent-rgb), 0.12);
+  color: var(--accent);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: var(--space-2);
+}
+
+.contact__success h3 {
+  font-size: 1.4rem;
+  color: var(--text);
+}
+
+.contact__success p {
+  color: var(--text-muted);
+  margin-bottom: var(--space-3);
+}
+
+/* ----- Direct links ----- */
+.contact__direct {
+  padding: var(--space-6);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.contact__direct-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+  margin-bottom: var(--space-4);
+}
+
+.contact__direct-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__direct-list li {
+  border-top: 1px solid var(--border);
+}
+
+.contact__direct-list li:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.contact__direct-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3) 0;
+  transition: color 0.2s var(--ease-out);
+}
+
+.contact__direct-link:hover {
+  color: var(--accent);
+}
+
+.contact__direct-platform {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+}
+
+.contact__direct-link:hover .contact__direct-platform {
+  color: var(--accent);
+}
+
+.contact__direct-value {
+  font-size: 0.92rem;
+  color: var(--text);
+}
